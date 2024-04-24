@@ -1,0 +1,224 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    position: relative;
+}
+
+/* Define star styles */
+.star {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+}
+
+/* Generate random position for stars */
+.star:nth-child(1) {
+    top: 10%;
+    left: 20%;
+}
+
+.star:nth-child(2) {
+    top: 30%;
+    left: 70%;
+}
+
+.star:nth-child(3) {
+    top: 60%;
+    left: 40%;
+}
+
+.star:nth-child(4) {
+    top: 82%;
+    left: 15%;
+}
+
+.star:nth-child(5) {
+    top: 47%;
+    left: 89%;
+}
+
+.star:nth-child(6) {
+    top: 78%;
+    left: 32%;
+}
+
+.star:nth-child(7) {
+    top: 90%;
+    left: 50%;
+}
+
+.star:nth-child(8) {
+    top: 19%;
+    left: 78%;
+}
+
+.star:nth-child(9) {
+    top: 28%;
+    left: 41%;
+}
+
+.star:nth-child(10) {
+    top: 80%;
+    left: 7%;
+}
+
+.Info1,
+.Info2,
+.Info3,
+.Info4 {
+    width: 400px;
+    border: 1px dotted red;
+    color: antiquewhite;
+    margin: 80px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: auto;
+}
+
+.main-art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.globe-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.man {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 60%;
+    /* for changing the center of the below image for sync rotation */
+    animation: rotate 20s linear forwards;
+}
+
+.earth {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(360deg);
+    }
+
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+.garbage1,
+.garbage2,
+.garbage3,
+.garbage4 {
+    width: 50px;
+    height: 50px;
+}
+
+.garbage1 {
+    margin-bottom: -120px;
+    margin-left: -1px;
+    transform: rotateZ(300deg);
+    animation: cleangarbage1 20s linear forwards;
+}
+
+.garbage2 {
+    margin-bottom: -290px;
+    margin-left: -35px;
+    transform: rotateZ(230deg);
+    animation: cleangarbage2 20s linear forwards;
+}
+
+.garbage3 {
+    margin-bottom: -300px;
+    margin-left: 150px;
+    transform: rotateZ(150deg);
+    animation: cleangarbage3 20s linear forwards;
+}
+
+.garbage4 {
+    margin-bottom: -100px;
+    margin-left: 250px;
+    transform: rotateZ(75deg);
+    animation: cleangarbage4 20s linear forwards;
+}
+
+@keyframes cleangarbage1 {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cleangarbage2 {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cleangarbage3 {
+    0% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cleangarbage4 {
+    0% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
